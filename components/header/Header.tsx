@@ -7,7 +7,7 @@ import MobileNav from '@/components/header/MobileNav'
 
 const Header = () => {
   return (
-    <header className="w-full py-5">
+    <header className="w-full max-h-[60px] py-3">
       <MaxWidthWrapper>
         <nav className="flex items-center justify-between">
 
