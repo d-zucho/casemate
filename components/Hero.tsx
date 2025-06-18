@@ -1,12 +1,15 @@
 import MaxWidthWrapper from '@/components/MaxWidthComponent'
+import HeroBadge from '@/components/HeroBadge'
 
 const Hero = () => {
   return (
-    <div className={'h-[calc(100vh_-_60px)]  bg-[url("/images/hero-bg.png")] w-full bg-cover bg-center'}>
+    <section className={'h-[calc(100vh_-_60px)]  bg-[url("/images/hero-bg.png")] w-full bg-cover bg-center overflow-hidden'}>
       <MaxWidthWrapper>
-        <div></div>
+        <HeroBadge />
+
+
       </MaxWidthWrapper>
-    </div>
+    </section>
   )
 }
 export default Hero
