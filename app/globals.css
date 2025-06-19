@@ -3,19 +3,22 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
-
 @theme inline {
   --font-source: var(--font-source);
   --font-inter: var(--font-inter);
   --color-my-orange-50: #fdf6f1;
   --color-my-orange-100: #ffe5d1;
+  --color-my-hero-orange: #ff994e;
 
+  --color-my-btn-gray: #d3d3d3;
   --color-my-orange-200: #f0bc96;
+  --color-my-orange-300: #edb287;
   --color-my-orange-500: #e99f69;
   --color-my-orange-800: #a36f4a;
   --color-dark-tag-bg: #646464;
 
+  --color-my-green-300: #647b66;
+  --color-my-green-400: #506b53;
   --color-my-green-500: #3d5a40;
   --color-my-title-2: #393939;
   --color-my-body: rgba(0, 0, 0, 0.6);
