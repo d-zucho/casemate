@@ -21,12 +21,12 @@ const Header = () => {
             />
 
             {/*  Links */}
-            <div className='flex items-center gap-5 max-md:hidden'>
+            <div className='flex items-center gap-5 max-lg:hidden'>
               {NAV_LINKS.map(
                 ({ label, href }: { label: string; href: string }) => (
                   <Link key={label} href={href} className={'font-medium'}>
                     <div className={'w-fit relative overflow-x-clip group'}>
-                      <span className={''}>{label}</span>
+                      <span className={'text-black/60'}>{label}</span>
                       <div
                         className={
                           'w-full h-0.5 rounded-full bg-my-orange-500 absolute bottom-0 -left-full group-hover:left-0 group-hover:right-0 transition-all duration-400'
@@ -40,10 +40,10 @@ const Header = () => {
           </div>
 
           {/* Buttons */}
-          <div className={'space-x-4'}>
+          <div className={'max-lg:hidden flex flex-row gap-4'}>
             <Button
               className={
-                'bg-my-green-500 hover:bg-my-green-300 transition-colors duration-300 hover:cursor-pointer font-medium  relative shadow-[inset_-4px_-4px_6px_0px_rgba(0,_0,_0,_0.5)] group hover:shadow-none'
+                'bg-my-green-500 hover:bg-my-green-400 transition-colors duration-400 hover:cursor-pointer font-medium  relative shadow-[inset_-4px_-4px_6px_0px_rgba(0,_0,_0,_0.5)] group hover:shadow-none'
               }
             >
               <div className='absolute inset-0 rounded-sm shadow-[inset_4px_5px_6px_0px_rgba(255,_255,_255,_0.2)] group-hover:hidden' />
@@ -52,7 +52,7 @@ const Header = () => {
             <Button
               className={cn(
                 'min-w-[100px]',
-                'bg-my-orange-500 hover:bg-my-orange-200 transition-colors duration-300 font-medium border-b-2 relaive shadow-[inset_-4px_-4px_6px_0px_rgba(0,_0,_0,_0.3)] group hover:shadow-none relative'
+                'bg-my-orange-600 hover:bg-my-orange-500 transition-colors duration-400 font-medium border-b-2 relaive shadow-[inset_-4px_-4px_6px_0px_rgba(0,_0,_0,_0.3)] group hover:shadow-none relative hover:cursor-pointer'
               )}
             >
               <div className='absolute inset-0 rounded-sm shadow-[inset_4px_5px_6px_0px_rgba(255,_255,_255,_0.2)] group-hover:hidden' />
@@ -61,7 +61,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Nav */}
-          <div className={'md:hidden'}>
+          <div className={'lg:hidden'}>
             <MobileNav />
           </div>
         </nav>

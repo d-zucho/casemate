@@ -5,7 +5,7 @@ const HeroBadge = () => {
     <div className={'mt-10 overflow-hidden rounded-full w-fit'}>
       <div
         className={
-          'w-fit py-1 px-5 rounded-full bg-dark-tag-bg/60 text-my-orange-500 relative flex gap-1'
+          'w-fit py-1 px-5 rounded-full bg-dark-tag-bg/60 text-my-orange-500 relative flex gap-1 items-center justify-center'
         }
       >
         <div
@@ -13,9 +13,9 @@ const HeroBadge = () => {
             'absolute inset-0 shadow-[inset_0px_2px_3px_-1px_rgba(255,_255,_255,_0.4)]'
           }
         />
-        <AwardIcon />
-        <span>Award winning resource</span>
-        <AwardIcon />
+        <AwardIcon size={16} />
+        <span className='text-sm'>Award winning resource</span>
+        <AwardIcon size={16} />
         <div
           className={
             'absolute bottom-0 inset-x-0 shadow-[inset_4px_8px_1px_-2px_rgba(0,_0,_0,_0.9)]'
