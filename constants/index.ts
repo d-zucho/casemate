@@ -1,4 +1,6 @@
-export const NAV_LINKS = [
+import { IntroStat, NavLink } from '@/types'
+
+export const NAV_LINKS: NavLink[] = [
   {
     label: 'Home',
     href: '/',
@@ -18,5 +20,16 @@ export const NAV_LINKS = [
   {
     label: 'Contact',
     href: '/contact',
+  },
+]
+
+export const INTRO_STATS: IntroStat[] = [
+  {
+    number: '2315',
+    label: 'Total exonerations',
+  },
+  {
+    number: '27,300+',
+    label: 'Total years lost',
   },
 ]
