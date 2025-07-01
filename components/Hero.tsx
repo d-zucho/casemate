@@ -15,7 +15,7 @@ const Hero = () => {
           <HeroBadge />
           <div className={'flex justify-center flex-col'}>
             <div className={'mt-5'}>
-              <h1 className={'flex flex-col text-7xl font-bold'}>
+              <h1 className={'flex flex-col text-6xl md:text-7xl font-bold'}>
                 <span className={'text-white'}>Unveiling Truth</span>
                 <span className={'text-my-hero-orange'}>Restoring Justice</span>
               </h1>

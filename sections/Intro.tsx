@@ -6,44 +6,42 @@ const Intro = () => {
   return (
     <section className='mt-20'>
       <MaxWidthWrapper>
-        <div>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:justify-between text-center md:text-left gap-10'>
           <div>
-            <h2 className='text-4xl font-bold text-my-title-2 max-w-xl'>
+            <h2 className='md:text-4xl font-bold text-3xl text-my-title-2 max-w-xl'>
               Tracking wrongful convictions in the U.S.
             </h2>
             {/* <p className='text-muted-foreground'>
               See the stories. Learn the patterns.
             </p> */}
-            <p className='text-my-hero-orange font-bold'>
+            <p className='text-my-hero-orange font-semibold'>
               See the stories. Learn the patterns.
             </p>
 
             {/*  stats  */}
-            <div className='flex flex-col md:flex-row md:gap-15 mt-8 text-center md:text-left'>
-              {/* stats container */}
+            <div className='mt-10 flex space-between w-full md:gap-4'>
               {INTRO_STATS.map((stat, index) => (
-                <div
-                  key={index}
-                  className='flex flex-col items-center md:items-start justify-start'
-                >
-                  <p className='text-3xl font-bold text-my-green-500'>
+                <div key={index} className='w-full'>
+                  <h3 className='md:text-4xl text-2xl font-semibold text-my-body-2'>
                     {stat.number}
-                  </p>
-                  <p className='text-sm font-bold text-muted-foreground'>
+                  </h3>
+                  <p className='text-my-green-500 font-medium mt-2'>
                     {stat.label}
                   </p>
                 </div>
               ))}
             </div>
+          </div>
+          <div className='max-sm:w-[450px]'>
             <div className='w-full'>
               <Image
                 src={'/images/H_Intro.png'}
-                // width={500}
-                // height={500}
-                width={600}
+                width={400}
                 height={400}
+                // width={600}
+                // height={400}
                 alt='Tracking'
-                className='object-cover max-w-full overflow-hidden'
+                className='w-full max-md:w-[500px] max-w-full overflow-hidden object-center rounded-lg '
               />
             </div>
           </div>
