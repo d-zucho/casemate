@@ -1,8 +1,12 @@
+'use client'
+import AnimatedStats from '@/components/AnimatedStats'
 import MaxWidthWrapper from '@/components/MaxWidthComponent'
 import { INTRO_STATS } from '@/constants'
 import Image from 'next/image'
+import { useState } from 'react'
 
 const Intro = () => {
+  const [counterOn, setCounterOn] = useState(false)
   return (
     <section className='mt-20'>
       <MaxWidthWrapper>
@@ -23,7 +27,7 @@ const Intro = () => {
               {INTRO_STATS.map((stat, index) => (
                 <div key={index} className='w-full'>
                   <h3 className='md:text-4xl text-2xl font-semibold text-my-body-2'>
-                    {stat.number}
+                    <AnimatedStats num={stat.number} />
                   </h3>
                   <p className='text-my-green-500 font-medium mt-2'>
                     {stat.label}
@@ -46,6 +50,11 @@ const Intro = () => {
             </div>
           </div>
         </div>
+        {/* <AnimatedStats num={100} /> */}
+
+        <h3 className='md:text-4xl text-2xl font-semibold text-my-body-2'>
+          {/* <AnimatedStats num={100} /> */}
+        </h3>
       </MaxWidthWrapper>
     </section>
   )

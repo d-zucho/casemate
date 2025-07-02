@@ -25,11 +25,11 @@ export const NAV_LINKS: NavLink[] = [
 
 export const INTRO_STATS: IntroStat[] = [
   {
-    number: '2315',
+    number: 2315,
     label: 'Total exonerations',
   },
   {
-    number: '27,300+',
+    number: 27300,
     label: 'Total years lost',
   },
 ]

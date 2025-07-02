@@ -1,5 +1,5 @@
 export type IntroStat = {
-  number: string
+  number: number
   label: string
 }
 

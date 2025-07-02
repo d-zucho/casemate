@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@number-flow/react": "^0.5.10",
+    "@ppasmik/react-scroll-trigger": "^1.0.1",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
@@ -19,6 +21,7 @@
     "motion": "^12.18.1",
     "next": "15.3.3",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.3.1"
   },
