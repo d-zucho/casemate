@@ -8,7 +8,7 @@ import { useState } from 'react'
 const Intro = () => {
   const [counterOn, setCounterOn] = useState(false)
   return (
-    <section className='mt-20'>
+    <section className='py-20'>
       <MaxWidthWrapper>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:justify-between text-center md:text-left gap-10'>
           <div>
@@ -50,11 +50,8 @@ const Intro = () => {
             </div>
           </div>
         </div>
-        {/* <AnimatedStats num={100} /> */}
 
-        <h3 className='md:text-4xl text-2xl font-semibold text-my-body-2'>
-          {/* <AnimatedStats num={100} /> */}
-        </h3>
+        <h3 className='md:text-4xl text-2xl font-semibold text-my-body-2'></h3>
       </MaxWidthWrapper>
     </section>
   )
