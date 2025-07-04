@@ -1,6 +1,7 @@
 // import { LucideIcon } from 'lucide-react'
 
 import { LucideIcon } from 'lucide-react'
+import { ReactPortal } from 'react'
 
 type IntroStat = {
   number: number
@@ -20,7 +21,7 @@ type NewsLogo = {
 }
 
 type HowItWorksStep = {
-  icon: SVGAElement | LucideIcon
+  icon: LucideIcon
   title: string
   step: number
   description: string
