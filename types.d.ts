@@ -1,3 +1,7 @@
+// import { LucideIcon } from 'lucide-react'
+
+import { LucideIcon } from 'lucide-react'
+
 type IntroStat = {
   number: number
   label: string
@@ -13,4 +17,11 @@ type NewsLogo = {
   src: string
   width?: number
   height?: number
+}
+
+type HowItWorksStep = {
+  icon: SVGAElement | LucideIcon
+  title: string
+  step: number
+  description: string
 }

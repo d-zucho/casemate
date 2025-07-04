@@ -1,6 +1,9 @@
 // types dont need to be imported because they are in a file that is a .d.ts which means it is a typescript declaration file
 // and typescript will automatically include it in the project
 
+import { HowItWorksStep, IntroStat, NavLink, NewsLogo } from '@/types'
+import { Filter, Map, Search, TriangleAlert } from 'lucide-react'
+
 export const NAV_LINKS: NavLink[] = [
   {
     label: 'Home',
@@ -72,5 +75,36 @@ export const NEWS_LOGOS: NewsLogo[] = [
     src: 'icons/washington-post.svg',
     width: 150,
     height: 75,
+  },
+]
+
+export const HOW_IT_WORKS_STEPS: HowItWorksStep[] = [
+  {
+    step: 1,
+    icon: Filter,
+    title: 'Apply Filters',
+    description:
+      'Narrow down search results by applying filters such as location, date, and case type.',
+  },
+  {
+    step: 2,
+    icon: Search,
+    title: 'Search Cases',
+    description:
+      'Use our powerful search to find specific cases or browse through the comprehensive database.',
+  },
+  {
+    step: 3,
+    icon: Map,
+    title: 'Explore Details',
+    description:
+      'Dive deep into case timelines, evidence and the path to exoneration.',
+  },
+  {
+    step: 4,
+    icon: TriangleAlert,
+    title: 'Share Stories',
+    description:
+      'Help raise awareness by sharing stories of wrongful convictions and exonerations.',
   },
 ]

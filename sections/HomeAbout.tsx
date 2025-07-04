@@ -46,7 +46,7 @@ const HomeAbout = () => {
             </div>
             <Button
               variant='outline'
-              className='mt-6 bg-transparent text-muted-foreground group w-[180px] flex justify-center items-center mx-auto'
+              className='mt-6 bg-transparent text-muted-foreground group w-[180px] flex justify-center items-center mx-auto md:mx-0'
             >
               <span className=''>Learn More</span>
               <ArrowRight className='size-5  group-hover:translate-x-1 transition ease-in-out duration-300' />
