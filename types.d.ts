@@ -26,3 +26,8 @@ type HowItWorksStep = {
   step: number
   description: string
 }
+
+type AwardIcon = {
+  img: string
+  label: string
+}

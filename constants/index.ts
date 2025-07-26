@@ -1,7 +1,13 @@
 // types dont need to be imported because they are in a file that is a .d.ts which means it is a typescript declaration file
 // and typescript will automatically include it in the project
 
-import { HowItWorksStep, IntroStat, NavLink, NewsLogo } from '@/types'
+import {
+  AwardIcon,
+  HowItWorksStep,
+  IntroStat,
+  NavLink,
+  NewsLogo,
+} from '@/types'
 import { Filter, Map, Search, TriangleAlert } from 'lucide-react'
 
 export const NAV_LINKS: NavLink[] = [
@@ -106,5 +112,24 @@ export const HOW_IT_WORKS_STEPS: HowItWorksStep[] = [
     title: 'Share Stories',
     description:
       'Help raise awareness by sharing stories of wrongful convictions and exonerations.',
+  },
+]
+
+export const AWARD_ICONS: AwardIcon[] = [
+  {
+    img: 'icons/Award01.svg',
+    label: 'Best Research',
+  },
+  {
+    img: 'icons/Award02.svg',
+    label: 'Most Innovative',
+  },
+  {
+    img: 'icons/Award03.svg',
+    label: "People's Choice",
+  },
+  {
+    img: 'icons/Award04.svg',
+    label: 'Most Impactful',
   },
 ]
