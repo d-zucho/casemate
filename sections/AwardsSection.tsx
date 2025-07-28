@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const AwardsSection = () => {
   return (
-    <section className='py-20'>
+    <section className='py-20 md:py-32'>
       <MaxWidthWrapper>
         <div className='flex gap-10 md:gap-20 items-center justify-center flex-wrap'>
           {AWARD_ICONS.map((award) => (

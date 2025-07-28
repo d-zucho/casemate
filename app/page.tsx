@@ -3,9 +3,8 @@ import Intro from '@/sections/Intro'
 import NewsCard from '@/components/NewsCard'
 import HomeAbout from '@/sections/HomeAbout'
 import HomeExplore from '@/sections/HomeExplore'
-import StepCard from '@/components/StepCard'
-import { Map } from 'lucide-react'
 import AwardsSection from '@/sections/AwardsSection'
+import FeaturedCases from '@/sections/FeaturedCases'
 
 export default function Home() {
   return (
@@ -16,6 +15,7 @@ export default function Home() {
       <HomeAbout />
       <HomeExplore />
       <AwardsSection />
+      <FeaturedCases />
     </div>
   )
 }
