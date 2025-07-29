@@ -3,6 +3,8 @@
 
 import {
   AwardIcon,
+  CaseInfo,
+  CaseTags,
   HowItWorksStep,
   IntroStat,
   NavLink,
@@ -131,5 +133,35 @@ export const AWARD_ICONS: AwardIcon[] = [
   {
     img: 'icons/Award04.svg',
     label: 'Most Impactful',
+  },
+]
+
+export const CASES: CaseInfo[] = [
+  {
+    title: 'Case 1',
+    description:
+      'In this case, the defendant was wrongfully convicted due to witness tampering and false testimony.',
+    location: 'Location 1',
+    yearsServed: 5,
+    imageUrl: '/images/H_About.png',
+    tags: [CaseTags.WITNESS_TAMPERING, CaseTags.FALSE_TESTIMONY],
+  },
+  {
+    title: 'Case 2',
+    description:
+      'In this case, the defendant was wrongfully convicted due to police misconduct and a false confession.',
+    location: 'Location 2',
+    yearsServed: 10,
+    imageUrl: '/images/H_About.png',
+    tags: [CaseTags.MISCONDUCT, CaseTags.FALSE_CONFESSION],
+  },
+  {
+    title: 'Case 3',
+    description:
+      'In this case, the defendant was wrongfully convicted due to misidentification and other factors. Then was exonerated after serving 8 years. He is now an advocate for criminal justice reform.',
+    location: 'Location 3',
+    yearsServed: 8,
+    imageUrl: '/images/H_About.png',
+    tags: [CaseTags.MISIDENTIFICATION, CaseTags.OTHER],
   },
 ]
