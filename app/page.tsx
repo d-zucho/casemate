@@ -5,6 +5,7 @@ import HomeAbout from '@/sections/HomeAbout'
 import HomeExplore from '@/sections/HomeExplore'
 import AwardsSection from '@/sections/AwardsSection'
 import FeaturedCases from '@/sections/FeaturedCases'
+import HomeGetFacts from '@/sections/HomeGetFacts'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HomeExplore />
       <AwardsSection />
       <FeaturedCases />
+      <HomeGetFacts />
     </div>
   )
 }

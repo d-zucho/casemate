@@ -21,16 +21,16 @@ const CaseCard = ({
 }: CaseInfo) => {
   return (
     <>
-      <Card className='w-[300px]  relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 pt-2 bg-my-orange-50'>
+      <Card className='w-[300px]  relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 pt-2 bg-white'>
         {/* <CardHeader className=''> */}
         <CardContent className='px-2'>
-          <div className=''>
+          <div className='flex'>
             <Image
               src={'/images/H_About.png'}
               alt='Case Image'
-              width={500}
+              width={400}
               height={300}
-              className='rounded-lg'
+              className='rounded-lg object-cover w-full shadow-sm'
             />
             <div className='mt-2 flex items-center justify-between px-1'>
               <div className='flex items-center gap-1 w-fit'>

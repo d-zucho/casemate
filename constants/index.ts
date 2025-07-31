@@ -9,6 +9,7 @@ import {
   IntroStat,
   NavLink,
   NewsLogo,
+  TFactCard,
 } from '@/types'
 import { Filter, Map, Search, TriangleAlert } from 'lucide-react'
 
@@ -163,5 +164,23 @@ export const CASES: CaseInfo[] = [
     yearsServed: 8,
     imageUrl: '/images/H_About.png',
     tags: [CaseTags.MISIDENTIFICATION, CaseTags.OTHER],
+  },
+]
+
+export const GET_THE_FACTS: TFactCard[] = [
+  {
+    title: 'Comprehensive Database',
+    description:
+      'Search and filter through hundreds of wrongful conviction cases by state, race, crime type, and cause of error.',
+  },
+  {
+    title: 'Insightful Statistics',
+    description:
+      'Visualize patterns and trends in wrongful convictions through interactive charts and geographic data.',
+  },
+  {
+    title: 'Educational Resources',
+    description:
+      'Access research, articles, and organizations working to prevent wrongful convictions and support exonerees.',
   },
 ]

@@ -50,3 +50,8 @@ export type CaseInfo = {
   imageUrl: string
   tags: CaseTags[]
 }
+
+export type TFactCard = {
+  title: string
+  description: string
+}
